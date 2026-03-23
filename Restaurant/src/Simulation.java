@@ -1,9 +1,9 @@
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Simulation {
     public static void main(String[] args) {
-        BlockingQueue<Order> queue = new LinkedBlockingQueue<>();
+        List<Order> queue = new ArrayList<>();
 
         new Thread(new Kitchen(queue)).start();
         new Thread(new Waiter(queue)).start();
