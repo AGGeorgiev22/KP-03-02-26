@@ -324,7 +324,7 @@ public class LunnaSonata {
         return tick;
     }
 
-    private static long run(MidiPlayer player, long tick) throws Exception {
+    private static long coda(MidiPlayer player, long tick) throws Exception {
         bass(player, tick, 37, 49, W, PP);
         mel(player, tick, 64, W, P);
         tick = arp(player, tick, 56, 61, 64, 4, PP);
