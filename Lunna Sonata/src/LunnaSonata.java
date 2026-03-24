@@ -42,7 +42,7 @@ public class LunnaSonata {
         tick = secondTheme(player, tick);
         tick = development(player, tick);
         tick = recapitulation(player, tick);
-        run(player, tick);
+        coda(player, tick);
     }
 
     private static long introduction(MidiPlayer player, long tick) throws Exception {
